@@ -58,7 +58,9 @@ export default function Navbar({ onOpenResume }) {
             id="nav-logo"
           >
             <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-brand-500 to-indigo-500 flex items-center justify-center text-white shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform">
-              <span className="font-mono text-base font-extrabold">RM</span>
+              <span className="font-mono text-sm font-extrabold">
+                {personalInfo.name.split(' ').map(n => n[0]).join('')}
+              </span>
             </div>
             <div className="flex flex-col">
               <span className="leading-tight group-hover:text-brand-300 transition-colors">

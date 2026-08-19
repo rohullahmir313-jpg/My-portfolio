@@ -72,13 +72,13 @@ export default function Hero({ onOpenResume, onShowToast }) {
 
           {/* Quick Details Chips */}
           <div className="flex flex-wrap items-center justify-center gap-3 text-xs sm:text-sm text-slate-400">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-900/60 border border-slate-800">
+            <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800">
               <GraduationCap className="w-4 h-4 text-brand-400" />
-              {personalInfo.college}
+              SVIET, Banur (IKGPTU) • Batch {personalInfo.batch}
             </span>
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-900/60 border border-slate-800">
+            <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800">
               <MapPin className="w-4 h-4 text-brand-400" />
-              {personalInfo.location}
+              {personalInfo.location} (Currently in {personalInfo.currentLocation})
             </span>
           </div>
 
